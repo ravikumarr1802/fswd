@@ -1,0 +1,47 @@
+<web-app>  
+ 
+ <servlet>
+        <servlet-name>CreateDatabase</servlet-name>
+        <servlet-class>CreateDatabase</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateDatabase</servlet-name>
+        <url-pattern>/CreateDatabase</url-pattern>
+    </servlet-mapping>
+
+
+<servlet>
+        <servlet-name>MobileTable</servlet-name>
+        <servlet-class>MobileTable</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MobileTable</servlet-name>
+        <url-pattern>/MobileTable</url-pattern>
+    </servlet-mapping>
+
+
+
+ 
+<servlet>
+        <servlet-name>SubmitMobileDetails </servlet-name>
+        <servlet-class>SubmitMobileDetails</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SubmitMobileDetails </servlet-name>
+        <url-pattern>/SubmitMobileDetails</url-pattern>
+    </servlet-mapping>
+
+
+
+
+<servlet>
+        <servlet-name>MobileDetails</servlet-name>
+        <servlet-class>MobileDetails</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MobileDetails</servlet-name>
+        <url-pattern>/MobileDetails</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>  

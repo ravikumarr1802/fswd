@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Server Request</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <h1 style="color: green">Server Request</h1>
+    <button>Request Data</button>
+    <h2 id="p1"></h2>
+    <script>
+      $(document).ready(function () {
+        $("button").click(function () {
+          $.ajax("xyz.txt", {
+            success: function (data) {
+              $("#p1").append(data);
+            },
+            error: function (errorMessage) {
+              $("#p1").append("Error: " + errorMessage);
+            },
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

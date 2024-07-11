@@ -1,0 +1,10 @@
+<web-app>
+    <servlet>
+        <servlet-name>createDatabase</servlet-name>
+        <jsp-file>/createDatabase.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>createDatabase</servlet-name>
+        <url-pattern>/createDatabase</url-pattern>
+    </servlet-mapping>
+</web-app>

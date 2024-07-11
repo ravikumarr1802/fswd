@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Matrix Addition</title>
+</head>
+<body>
+    <h2>Matrix Addition</h2>
+    <form method="post" action="add.php">
+        <h3>Matrix A</h3>
+        <label for="rowsA">Number of rows:</label>
+        <input type="number" name="rowsA" id="rowsA" required><br><br>
+        <label for="colsA">Number of columns:</label>
+        <input type="number" name="colsA" id="colsA" required><br><br>
+        <label for="matrixA">Enter the matrix elements (comma-separated for rows, space-separated for columns):</label><br>
+        <textarea name="matrixA" id="matrixA" rows="5" cols="40" required></textarea><br><br>
+
+        <h3>Matrix B</h3>
+        <label for="rowsB">Number of rows:</label>
+        <input type="number" name="rowsB" id="rowsB" required><br><br>
+        <label for="colsB">Number of columns:</label>
+        <input type="number" name="colsB" id="colsB" required><br><br>
+        <label for="matrixB">Enter the matrix elements (comma-separated for rows, space-separated for columns):</label><br>
+        <textarea name="matrixB" id="matrixB" rows="5" cols="40" required></textarea><br><br>
+
+        <input type="submit" name="submit" value="Add">
+    </form>
+</body>
+</html>

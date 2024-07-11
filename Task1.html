@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>Left-Most Vowel</title>
+</head>
+<body>
+<h1 align="center">Left-Most Vowel</h1>
+<input type="text" id="j" placeholder="Enter a string">
+<input type=button value="Left-Most Vowel" onclick="abc()">
+<p id="result"></p>
+<script>
+    function abc() {
+     var p = document.getElementById('j').value.toLowerCase();
+      var vowels = ['a', 'e', 'i', 'o', 'u'];
+      for (var i = 0; i < p.length; i++) {
+        if (vowels.includes(p[i])) {
+         document.getElementById('result').innerText = `The position of the left-most vowel is: ${i}`;
+          return;
+        }
+      }
+      document.getElementById('result').innerText = 'No vowels found in the string';
+    }
+</script>
+</body>
+</html>

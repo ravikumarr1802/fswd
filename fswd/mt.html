@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Matrix Transpose</title>
+</head>
+<body>
+    <h2>Matrix Transpose</h2>
+    <form method="post" action="transpose.php">
+        <label for="rows">Number of rows:</label>
+        <input type="number" name="rows" id="rows" required><br><br>
+        <label for="cols">Number of columns:</label>
+        <input type="number" name="cols" id="cols" required><br><br>
+        <label for="matrix">Enter the matrix elements (comma-separated for rows, space-separated for columns):</label><br>
+        <textarea name="matrix" id="matrix" rows="5" cols="40" required></textarea><br><br>
+        <input type="submit" name="submit" value="Transpose">
+    </form>
+</body>
+</html>

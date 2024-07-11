@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <style>
+      p{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <script>
+      var g = setInterval(inc, 100);
+      var f = 5;
+      var t = document.getElementById("demo");
+      function inc() {
+        t.innerHTML = "TEXT GROWING";
+        t.setAttribute("style", "font-size: " + f + "px; color: red");
+        f = f + 5;
+        if (f >= 50) {
+          clearInterval(g);
+          var s = setInterval(dec, 100);
+        }
+      }
+      function dec() {
+        f = f - 5;
+        t.innerHTML = "TEXT SHRINKING";
+        t.setAttribute("style", "font-size: " + f + "px; color: blue");
+        if (f === 5) {
+          clearInterval(s);
+        }
+      }
+    </script>
+  </body>
+</html>
